@@ -4,7 +4,7 @@ const Home = () => {
   const [data, setData] = useState([]);
 
   useEffect(() => {
-    fetch('')
+    fetch('http://localhost:3001/employees')
       .then(response => response.json())
       .then(json => setData(json));
   }, []);
