@@ -1,7 +1,10 @@
 
+import { IEmployeeProps } from '../../../@types/Employee';
 import './EmployeeDesktop.css';
 
-export const EmployeeDesktop = ({ employees }) => {
+export const EmployeeDesktop = ({ employees }: {
+  employees: IEmployeeProps[];
+}) => {
   return (
     <div className="home__content-desktop-view">
       <table className="home__content-desktop-table">

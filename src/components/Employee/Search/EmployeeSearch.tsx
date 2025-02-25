@@ -2,7 +2,10 @@ import { Search } from "lucide-react"
 
 import './EmployeeSearch.css'
 
-export const EmployeeSearch = ({ searchQuery, setSearchQuery }) => {
+export const EmployeeSearch = ({ searchQuery, setSearchQuery }: {
+  searchQuery: string,
+  setSearchQuery: (query: string) => void
+}) => {
 
   return (
     <div className="employee__search-container">

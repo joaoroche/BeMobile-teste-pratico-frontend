@@ -15,7 +15,7 @@ const Home = () => {
     filterByName: searchQuery,
   })
 
-  const handleSearch = useCallback((query) => {
+  const handleSearch = useCallback((query: string) => {
     setSearchQuery(query);
   }, []);
 
@@ -30,7 +30,7 @@ const Home = () => {
 
       {isLoading && <EmployeeLoading />}
 
-      {isError && <EmployeeError message={error?.message} code={error?.code} />}
+      {isError && <EmployeeError message={error?.message} />}
 
       {!isLoading && !isError && data.length === 0 && <p>Nenhum funcionário encontrado</p>}
 

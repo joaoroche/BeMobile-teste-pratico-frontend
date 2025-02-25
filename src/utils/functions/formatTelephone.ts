@@ -1,4 +1,4 @@
-export const formatTelephone = (input) => {
+export const formatTelephone = (input: string) => {
   const str = input.toString();
   
   const countryCode = str.slice(0, 2);

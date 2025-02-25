@@ -1,4 +1,6 @@
-export const filterByGetEmployee = (data, filterByName) => {
+import { IEmployeeProps } from "../../../@types/Employee";
+
+export const filterByGetEmployee = (data: IEmployeeProps[], filterByName: string) => {
   if (!filterByName) {
     return data;
   }

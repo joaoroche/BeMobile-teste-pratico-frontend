@@ -1,7 +1,8 @@
+import { IEmployeeProps } from "../../../@types/Employee";
 import { formatDate } from "../../functions/formatDate";
 import { formatTelephone } from "../../functions/formatTelephone";
 
-export const mapperGetEmployee = (data) => {
+export const mapperGetEmployee = (data: IEmployeeProps[]) => {
   return data.map((employee) => {
     return {
       ...employee,

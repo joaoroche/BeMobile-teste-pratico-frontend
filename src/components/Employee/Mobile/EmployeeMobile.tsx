@@ -2,18 +2,18 @@ import { useState } from "react"
 import { ChevronDown, Dot } from "lucide-react"
 
 import './EmployeeMobile.css'
+import { IEmployeeProps } from "../../../@types/Employee"
 
-export const EmployeeMobile = ({ employee }) => {
-  const [expandedId, setExpandedId] = useState(null)
+export const EmployeeMobile = ({ employee }: {
+  employee: IEmployeeProps[]
+}) => {
+  const [expandedId, setExpandedId] = useState<string | null>(null)
 
   return (
     <div className="home__content-mobile-view">
       <div className="home__content-mobile-list">
 
-        <div
-          className="home__content-mobile-header-root"
-          onClick={() => setExpandedId(expandedId === employee.id ? null : employee.id)}
-        >
+        <div className="home__content-mobile-header-root">
           <div className="home__content-mobile-lower-info">
             <h2>
               foto
