@@ -1,13 +1,16 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 
 import { getEmployee } from '../services/Employee/getEmployee';
 
 import { mapperGetEmployee } from '../utils/mappers/Employee/mapperGetEmployee';
+import { filterByGetEmployee } from '../utils/mappers/Employee/filterByGetEmployee';
 
-export const useGetEmployee = () => {
+export const useGetEmployee = ({ filterByName }) => {
   const [data, setData] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState(null);
+
+  const filteredEmployeeData = useMemo(() => filterByGetEmployee(data, filterByName), [data, filterByName]);
 
   useEffect(() => {
     const fetchEmployee = async () => {
@@ -24,5 +27,5 @@ export const useGetEmployee = () => {
     fetchEmployee();
   }, [])
 
-  return { data, isLoading, error, isError: error !== null };
+  return { data: filteredEmployeeData, isLoading, error, isError: error !== null };
 };
