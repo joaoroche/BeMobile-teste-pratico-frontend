@@ -11,6 +11,7 @@ Bem-vindo ao projeto BeMobile Teste Prático Frontend. Este repositório contém
 - [Uso](#uso)
 - [Estrutura do Projeto](#estrutura-do-projeto)
 - [Contribuições](#contribuições)
+- [Teste de performance](#teste-de-performance)
 
 ## Visão Geral
 
@@ -121,3 +122,7 @@ Contribuições e sugestões são bem-vindas!
 4. Envie suas alterações para o repositório remoto: `git push origin feat/minha-feature`.
 
 Por favor, siga o padrão de código existente e inclua testes quando necessário.
+
+## Teste de performance
+![Lighthouse Score](./lighthouse.jpg)
+
