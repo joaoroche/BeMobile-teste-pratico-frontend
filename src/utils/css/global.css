@@ -1,0 +1,22 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f0f0f0;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.page__container--root {
+  margin: 2.75rem 2rem;
+  display: flex;
+  flex-direction: column;
+  min-height: calc(100vh - 10.5rem);
+}
+
+@media (max-width: 768px) {
+  .page__container--root {
+    margin: 0 1.5rem;
+  }
+}
