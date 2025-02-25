@@ -10,7 +10,7 @@
 }
 
 .home__content-mobile-header-root {
-  background-color: #0500FF;
+  background-color: var(--primary-color);
   box-shadow: 0px 1px 2px 0px #00000033;
   border-radius: 0.5rem 0.5rem 0 0;
 
@@ -29,13 +29,13 @@
 }
 
 .home__content-mobile-list {
-  background-color: white;
+  background-color: var(--white);
   border-radius: 0.5rem;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
 }
 
 .home__content-mobile-list-item {
-  border-bottom: 1px solid #e5e7eb;
+  border-bottom: 1px solid var(--border-color-light);
 }
 
 .home__content-mobile-list-item:last-child {
@@ -74,7 +74,7 @@
 }
 
 .home__content-mobile-info-details {
-  border-top: 1px solid #e5e7eb;
+  border-top: 1px solid var(--border-color-light);
   background-color: #f9fafb;
   padding: 1rem;
 }

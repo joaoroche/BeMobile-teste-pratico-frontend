@@ -1,6 +1,17 @@
+:root {
+  --primary-color: #0500FF;
+  --secondary-background: #EDEFFB;
+  --text-color-dark: #1C1C1C;
+  --text-color-gray: #9E9E9E;
+  --border-color-light: #DFDFDF;
+  --background-light: #F5F5F5;
+  --background-off: #F0F0F0;
+  --white: #FFFFFF;
+}
+
 body {
   font-family: 'Roboto', sans-serif;
-  background-color: #f0f0f0;
+  background-color: var(--background-off);
 }
 
 code {

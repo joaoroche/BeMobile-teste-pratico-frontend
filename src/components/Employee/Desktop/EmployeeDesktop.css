@@ -6,15 +6,15 @@
 
 .home__content-desktop-table {
   width: 100%;
-  background-color: white;
+  background-color: var(--white);
   border-radius: 0.5rem;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
   border-collapse: collapse;
 }
 
 .home__content-desktop-table th {
-  background-color: #2563eb;
-  color: white;
+  background-color: var(--primary-color);
+  color: var(--white);
   text-align: left;
   padding: 0.75rem 1.5rem;
 }
@@ -36,8 +36,8 @@
 }
 
 .home__content-desktop-table-row {
-  background-color: white;
-  border-bottom: 1px solid #cccccc;
+  background-color: var(--white);
+  border-bottom: 1px solid var(--border-color-light);
 }
 
 .home__content-desktop-employee-photo {
