@@ -102,12 +102,12 @@ Consulte os scripts definidos no package.json para outras funcionalidades dispon
 
 ## Estrutura do Projeto
 A estrutura básica do projeto está organizada da seguinte forma:
-├── public/           # Arquivos estáticos, como imagens, fontes e o arquivo index.html
+├── public/           # Arquivos estáticos, como imagens, fontes e o arquivo 
 ├── src/              # Código fonte principal
 │   ├── components/   # Componentes de interface reutilizáveis
 │   ├── hooks.js      # Hooks personalizados
 │   ├── pages/        # Componentes de páginas para as diferentes rotas
-│   ├── services/     # Módulos de serviços e utilitários para interações com APIs
+│   ├── services/     # Módulos de serviços e utilitários para interações com 
 │   ├── App/          # Componente principal da aplicação (React Router)
 │   └── utils/        # Funções auxiliares e utilitários
 ├── package.json      # Dependências e scripts do projeto
