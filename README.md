@@ -58,13 +58,32 @@ Para rodar o projeto localmente, siga os passos abaixo:
 
 ## Uso
 Para iniciar o servidor de desenvolvimento, execute:
-  ```bash
-   npm run start
-   ```
-   ou
-   ```bash
-    yarn start
-  ```
+```bash
+npm run start:front:and:back
+```
+ou
+```bash
+   yarn start:front:and:back
+```
+
+Se você preferir rodar o servidor de backend separadamente, execute:
+```bash
+npm run server
+```
+ou
+```bash
+yarn server
+```
+E, em seguida, execute:
+```bash
+npm run start
+```
+ou
+```bash
+yarn start
+```
+
+Se tudo ocorrer bem, a aplicação estará disponível em http://localhost:3000.
 
 A aplicação será aberta automaticamente no navegador padrão. Se ocorrerem modificações no código, a página será recarregada automaticamente.
 
