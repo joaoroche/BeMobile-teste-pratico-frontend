@@ -1,0 +1,14 @@
+.home__content-header {
+  display: flex;
+  flex-wrap: wrap;
+
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 768px) {
+  .employee__search-container {
+   width: 100%;
+  }
+}
