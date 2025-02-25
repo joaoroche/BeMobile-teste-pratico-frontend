@@ -1,13 +1,12 @@
 import React, { useCallback, useState } from 'react';
-import { EmployeeSearch } from '../../components/Employee/Search/EmployeeSearch';
+import { EmployeeSearch } from '../../components/Employee/Search';
 import { EmployeeDesktop } from '../../components/Employee/Desktop';
 import { EmployeeMobile } from '../../components/Employee/Mobile';
 import { EmployeeLoading } from '../../components/Employee/Loading';
-
-import { useGetEmployee } from '../../hooks/useGetEmployee';
+import { EmployeeError } from '../../components/Employee/Error';
+import { useGetEmployee } from '../../hooks/Employee/useGetEmployee';
 
 import './Home.css';
-import { EmployeeError } from '../../components/Employee/Error';
 
 const Home = () => {
   const [searchQuery, setSearchQuery] = useState('');

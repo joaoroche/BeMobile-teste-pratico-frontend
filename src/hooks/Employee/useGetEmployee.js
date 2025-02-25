@@ -1,9 +1,8 @@
 import { useEffect, useMemo, useState } from 'react';
 
-import { getEmployee } from '../services/Employee/getEmployee';
-
-import { mapperGetEmployee } from '../utils/mappers/Employee/mapperGetEmployee';
-import { filterByGetEmployee } from '../utils/mappers/Employee/filterByGetEmployee';
+import { filterByGetEmployee } from '../../utils/mappers/Employee/filterByGetEmployee'
+import { mapperGetEmployee } from '../../utils/mappers/Employee/mapperGetEmployee'
+import { getEmployee } from '../../services/Employee/getEmployee';
 
 export const useGetEmployee = ({ filterByName }) => {
   const [data, setData] = useState([]);

@@ -10,7 +10,7 @@ export const EmployeeSearch = ({ searchQuery, setSearchQuery }) => {
 
       <input
         type="text"
-        placeholder="Pesquisar"
+        placeholder="Pesquisar por nome"
         value={searchQuery}
         onChange={(e) => setSearchQuery(e.target.value)}
         className="employee__search-input"
