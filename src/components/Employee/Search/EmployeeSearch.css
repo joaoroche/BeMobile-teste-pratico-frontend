@@ -1,0 +1,27 @@
+.employee__search-container {
+  display: flex;
+  position: relative;
+}
+
+.employee__search-icon {
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1rem;
+  height: 1rem;
+  color: #9ca3af;
+}
+
+.employee__search-input {
+  padding: 0.875rem 3rem 0.875rem 1rem;
+  border: 1px solid #DFDFDF;
+  border-radius: 0.5rem;
+  outline: none;
+  background-color: #fff;
+  width: 100%;
+}
+
+.employee__search-input:focus {
+  border-color: #0500FF;
+}
