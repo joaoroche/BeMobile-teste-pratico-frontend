@@ -1,70 +1,104 @@
-# Getting Started with Create React App
+# BeMobile Teste Prático Frontend
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Bem-vindo ao projeto BeMobile Teste Prático Frontend. Este repositório contém a aplicação frontend desenvolvida no contexto de um desafio prático, demonstrando técnicas modernas de desenvolvimento web, design responsivo e integração fluida com serviços de backend.
 
-## Available Scripts
+## Índice
 
-In the project directory, you can run:
+- [Visão Geral](#visão-geral)
+- [Funcionalidades](#funcionalidades)
+- [Tecnologias Utilizadas](#tecnologias-utilizadas)
+- [Instalação](#instalação)
+- [Uso](#uso)
+- [Estrutura do Projeto](#estrutura-do-projeto)
+- [Contribuições](#contribuições)
 
-### `npm start`
+## Visão Geral
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+O projeto BeMobile Teste Prático Frontend foi desenvolvido para demonstrar habilidades em desenvolvimento frontend, com foco em boas práticas como arquitetura baseada em componentes, gerenciamento de estado e interfaces de usuário responsivas. Esta base de código foi concebida para um desafio técnico e apresenta um design limpo, escalável e de fácil manutenção, podendo ser expandido para novas funcionalidades.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Funcionalidades
 
-### `npm test`
+- **Design Responsivo:** Layouts adaptáveis que garantem uma experiência de uso otimizada em desktops, tablets e dispositivos móveis.
+- **Framework Moderno:** Utiliza frameworks e bibliotecas atualizadas para a construção de interfaces interativas e gerenciamento do estado da aplicação.
+- **Integração com APIs:** Comunicação eficiente com APIs de backend para buscar e exibir dados dinâmicos.
+- **Estrutura Modular:** Organização do código para facilitar a manutenção e a escalabilidade do projeto.
+- **Testes Automatizados:** Inclusão de testes essenciais para garantir a estabilidade e o funcionamento dos componentes e da aplicação.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Tecnologias Utilizadas
 
-### `npm run build`
+- **Framework:** React.js
+- **Gerenciamento de Estado:** React Context 
+- **Estilização:** CSS
+- **Controle de Versão:** Git
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Instalação
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Para rodar o projeto localmente, siga os passos abaixo:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. **Clone o Repositório:**
 
-### `npm run eject`
+   ```bash
+   git clone https://github.com/joaoroche/BeMobile-teste-pratico-frontend.git
+   ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+2. **Acesse o Diretório:**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+   ```bash
+   cd BeMobile-teste-pratico-frontend
+   ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+3. **Instale as Dependências:**
+   ```bash
+   npm install
+   ```
+   ou
+   ```bash
+    yarn install
+    ```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Uso
+Para iniciar o servidor de desenvolvimento, execute:
+  ```bash
+   npm run start
+   ```
+   ou
+   ```bash
+    yarn start
+  ```
 
-## Learn More
+A aplicação será aberta automaticamente no navegador padrão. Se ocorrerem modificações no código, a página será recarregada automaticamente.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Para criar uma build para produção, utilize:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```bash
+npm run build
+```
+ou
+```bash
+yarn build
+```
 
-### Code Splitting
+Consulte os scripts definidos no package.json para outras funcionalidades disponíveis.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Estrutura do Projeto
+A estrutura básica do projeto está organizada da seguinte forma:
+├── public/           # Arquivos estáticos, como imagens, fontes e o arquivo index.html
+├── src/              # Código fonte principal
+│   ├── components/   # Componentes de interface reutilizáveis
+│   ├── hooks.js      # Hooks personalizados
+│   ├── pages/        # Componentes de páginas para as diferentes rotas
+│   ├── services/     # Módulos de serviços e utilitários para interações com APIs
+│   ├── App/          # Componente principal da aplicação (React Router)
+│   └── utils/        # Funções auxiliares e utilitários
+├── package.json      # Dependências e scripts do projeto
+└── README.md         # Documentação do projeto (este arquivo)
 
-### Analyzing the Bundle Size
+## Contribuições
+Contribuições e sugestões são bem-vindas!
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+1. Faça um fork do repositório.
+2. Crie uma branch para a sua feature ou correção de bug: `git checkout -b feat/minha-feature`.
+3. Faça commit das suas alterações: `git commit -m 'feat: adiciona nova feature'`.
+4. Envie suas alterações para o repositório remoto: `git push origin feat/minha-feature`.
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Por favor, siga o padrão de código existente e inclua testes quando necessário.
