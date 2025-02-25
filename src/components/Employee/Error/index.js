@@ -1,0 +1,1 @@
+export { EmployeeError } from './EmployeeError';
