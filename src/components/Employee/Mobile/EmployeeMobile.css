@@ -16,7 +16,7 @@
 
   h2 {
     text-transform: uppercase;
-    color: #fff;
+    color: var(--white);
     font-weight: 500;
     font-size: 16px;
   }
